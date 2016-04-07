@@ -2,8 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <style rel=></style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
   <title>Stage 1</title>
+  <!-- Notes:
+  -add mini topic list at top of each lesson with links -->
 </head>
 <body>
   <h1><img src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
@@ -48,19 +52,6 @@
         <p>
           <strong>Block</strong> elements have an invisible box around them, while <strong>inline</strong> elements can be anywhere.
         </p>
-        <h4>Inline Elements</h4>
-        <ul>
-          <li>a</li>
-          <li>strong</li>
-          <li>em</li>
-          <li>span</li>
-        </ul>
-        <h4>Inline Elements</h4>
-        <ul>
-          <li>p</li>
-          <li>div</li>
-          <li>h1</li>
-        </ul>
       </div>
     </div>
 
@@ -78,6 +69,26 @@
         <h3>Boxes</h3>
         <p>
           Everything on a webpage is a box. Breaking up sections of the page with <code>div</code> tags allows us to neatly <strong>boxify</strong> the page.
+        </p>
+      </div>
+
+      <div class="topic">
+        <h3>CSS</h3>
+        <p>
+          <strong>Cascading Style Sheets</strong> follow the <em>Most Specific Rule Applied</em>: you go down selectors until you reach the most relevant one.
+        </p>
+        <p>
+          A <strong>selector</strong> referencing either an HTML <code>tag</code>, <code>.class</code>, or <code>#id</code>. Then define <strong>properties</strong> and <strong>values</strong> to the selector.
+        </p>
+        <p>
+          Reference the CSS stylesheet in the HTML document.
+          <pre class="prettyprint">
+            &lt;link rel="stylesheet" href=style.css>
+          </pre>
+        </p>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>
+          <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>
         </p>
       </div>
     </div>

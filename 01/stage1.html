@@ -82,10 +82,11 @@
         </p>
         <p>
           Reference the CSS stylesheet in the HTML document.
-          <pre class="prettyprint">
-            &lt;link rel="stylesheet" href=style.css>
-          </pre>
         </p>
+        <pre class="prettyprint"><code>
+          &lt;link rel="stylesheet" href=style.css>
+        </code></pre>
+
         <p>
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>
           <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>
@@ -96,5 +97,16 @@
     <p>
       Credit <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">Andy's notes.</a>
     </p>
+
+    <script>
+      // Fix <pre> whitespace issue by Rick Hitchcock http://stackoverflow.com/a/31754563/745776
+      var pre= document.querySelector('pre');
+      //insert a span in front of the first letter.  (the span will automatically close.)
+      pre.innerHTML= pre.textContent.replace(/(\w)/, '<span>$1');
+      //get the new span's left offset:
+      var left= pre.querySelector('span').getClientRects()[0].left;
+      //move the code to the left, taking into account the body's margin:
+      pre.style.marginLeft= (-left + pre.getClientRects()[0].left)+'px';
+    </script>
   </body>
   </html>

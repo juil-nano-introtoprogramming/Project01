@@ -6,9 +6,14 @@
 #294860 - dark blue
 */
 
-h1 {
+#title {
   text-align: center;
   color: #02b3e4;
+}
+
+#subtitle {
+  text-align: center;
+  color: #abd;
 }
 
 body {
@@ -33,8 +38,9 @@ pre {
 }
 
 .lesson {
+  margin: auto;;
+  width: 80%;
   padding: 5px;
-  margin: 10px;
 }
 
 .concept {

@@ -1,5 +1,25 @@
 /*Stylesheet for Stage 1*/
 
+/* Colour Scheme:
+#02b3e4 - cyan
+#02ccba - aquamarine
+#294860 - dark blue
+*/
+
+h1 {
+  text-align: center;
+  color: #02b3e4;
+}
+
+body {
+  font-family: Helvetica;
+  color: #035;
+}
+
+a {
+  color: #02b3e4
+}
+
 code {
   padding: 2px 4px;
   font-size: 90%;
@@ -13,9 +33,10 @@ pre {
 }
 
 .lesson {
-
+  padding: 5px;
+  margin: 10px;
 }
 
-.topic {
+.concept {
 
 }

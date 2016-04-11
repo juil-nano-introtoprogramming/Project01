@@ -7,7 +7,7 @@
 */
 
 * {
-  /*outline: 1px solid red !important;*/
+  outline: 1px solid red !important;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,16 +15,16 @@
   box-sizing: border-box;
 }
 
-.header, .main, .nav, .aside, .footer {
+.header, .title, .main, .nav, .aside, .footer {
   flex: 1 100%;
 }
 
 #logo {
-  align-self: flex-start;
+  /*align-self: flex-start;*/
 }
 
 #title {
-  justify-content: center;
+  text-align: center;
   color: #02b3e4;
 }
 

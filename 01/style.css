@@ -72,3 +72,16 @@ pre {
 .concept {
 
 }
+
+.diagram {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.diagram > p {
+  font-style: oblique;
+  font-size: .8em;
+  margin: 10px;
+  align-self: flex-start;
+}

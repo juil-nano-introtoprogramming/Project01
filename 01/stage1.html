@@ -14,9 +14,15 @@ Created 2016-04-4 -->
   <!-- Notes:
   -add mini concept list at top of each lesson with links -->
 </head>
+
 <body>
-  <h1 id='title'><img src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
-    Intro to Programming Nanodegree</h1>
+  <div class="header">
+    <!-- Links to each lesson -->
+  </div>
+
+  <div class="main">
+    <img id="logo" src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
+    <h1 id='title'>Intro to Programming Nanodegree</h1>
     <h2 id="subtitle">Juil's Notes</h2>
 
     <div class="lesson">
@@ -75,6 +81,9 @@ Created 2016-04-4 -->
         <p>
           Everything on a webpage is a box. Breaking up sections of the page with <code>div</code> tags allows us to neatly <strong>boxify</strong> the page.
         </p>
+        <p>
+          All boxes are made up of 4 components: the <code>margin</code>, <code>border</code>, <code>padding</code>, and <code>content</code>.
+        </p>
       </div>
 
       <div class="concept">
@@ -91,26 +100,41 @@ Created 2016-04-4 -->
         <pre class="prettyprint">
           &lt;link rel="stylesheet" href="style.css"></pre>
 
-        <p>
-          [<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>,
-          <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>]
-        </p>
+          <p>
+            [<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>,
+            <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>]
+          </p>
+        </div>
+
+        <div class="concept">
+          <h3>Layout</h3>
+          <p>
+            CSS has powerful tools to layout content. You can use <strong>flexbox</strong> by adding the style <code>display: flex</code> to the container.
+          </p>
+          <img src="https://css-tricks.com/wp-content/uploads/2011/08/flexbox.png" alt="Flex container diagram">
+
+          <p>
+            [<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a>]
+          </p>
+        </div>
       </div>
     </div>
 
-    <p>
-      Credit <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">Andy's notes.</a>
-    </p>
+    <div class="footer">
+      <p>
+        Credit for a bunch of stuff goes to <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">Andy's notes.</a>
+      </p>
+    </div>
 
     <script>
-      // Fix <pre> whitespace issue by Rick Hitchcock http://stackoverflow.com/a/31754563/745776
-      var pre= document.querySelector('pre');
-      //insert a span in front of the first letter.  (the span will automatically close.)
-      pre.innerHTML= pre.textContent.replace(/(\w)/, '<span>$1');
-      //get the new span's left offset:
-      var left= pre.querySelector('span').getClientRects()[0].left;
-      //move the code to the left, taking into account the body's margin:
-      pre.style.marginLeft= (-left + pre.getClientRects()[0].left)+'px';
+    // Fix <pre> whitespace issue by Rick Hitchcock http://stackoverflow.com/a/31754563/745776
+    var pre= document.querySelector('pre');
+    //insert a span in front of the first letter.  (the span will automatically close.)
+    pre.innerHTML= pre.textContent.replace(/(\w)/, '<span>$1');
+    //get the new span's left offset:
+    var left= pre.querySelector('span').getClientRects()[0].left;
+    //move the code to the left, taking into account the body's margin:
+    pre.style.marginLeft= (-left + pre.getClientRects()[0].left)+'px';
     </script>
   </body>
   </html>

@@ -15,21 +15,49 @@
   box-sizing: border-box;
 }
 
-.header, .title, .main, .nav, .aside, .footer {
+.header, .main, .nav, .aside, .footer {
   flex: 1 100%;
 }
 
 #logo {
-  /*align-self: flex-start;*/
+  position: fixed;;
+  z-index: 2;
+}
+
+.nav {
+  background-color: #294860;
+  width: 100%;
+  position: fixed;;
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.nav > a {
+  padding: 10px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.2em;
+  text-decoration: none;
+  width: 120px;
+}
+
+.nav > a:hover {background-color: rgba(104, 188, 212, 0.5);}
+
+.header {
+  text-align: center;
+  margin: 0 20px;
+  padding: 10px;
+  margin-top: 80px;
+  background-color: #DEEFFF;
 }
 
 #title {
-  text-align: center;
   color: #02b3e4;
 }
 
 #subtitle {
-  text-align: center;
   color: #abd;
 }
 
@@ -43,6 +71,7 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 
+  margin: 0px;
   font-family: Helvetica;
   color: #035;
 }
@@ -64,10 +93,13 @@ pre {
 }
 
 .lesson {
-  margin: auto;;
+  margin: auto;
+  padding-top: 50px;
   width: 80%;
   padding: 5px;
 }
+
+.lesson:target {padding-top: 50px;}
 
 .concept {
 
@@ -84,4 +116,9 @@ pre {
   font-size: .8em;
   margin: 10px;
   align-self: flex-start;
+}
+
+.footer {
+  margin: 10px 20px;
+  padding: 10px;
 }

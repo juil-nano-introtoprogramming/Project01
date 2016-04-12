@@ -10,3 +10,4 @@ An **HTML** and **CSS** website containing the notes from Lessons 1-3.
 
 ### Extra
 - Use [**Google Prettify**](https://github.com/google/code-prettify) for code presentation
+- Use **git** & **github** for version control while using best practices

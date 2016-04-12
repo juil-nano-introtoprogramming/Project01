@@ -1,7 +1,7 @@
 ## Udacity Intro to Programming Nanodegree
 # Project 1
 
-An **HTML** and **CSS** website containing the notes from Lessons 1-3.
+An **HTML** and **CSS** website containing Juil's notes from Lessons 1-3.
 
 ### Concepts Utilized
 - Boxifying using ```div```

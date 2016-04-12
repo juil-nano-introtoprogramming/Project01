@@ -78,16 +78,6 @@ Created 2016-04-4 -->
         </p>
       </div>
 
-      <div class ="concept">
-        <h3>Boxes</h3>
-        <p>
-          Everything on a webpage is a box. Breaking up sections of the page with <code>div</code> tags allows us to neatly <strong>boxify</strong> the page.
-        </p>
-        <p>
-          All boxes are made up of 4 components: the <code>margin</code>, <code>border</code>, <code>padding</code>, and <code>content</code>.
-        </p>
-      </div>
-
       <div class="concept">
         <h3>CSS</h3>
         <p>
@@ -99,38 +89,63 @@ Created 2016-04-4 -->
         <p>
           Reference the CSS stylesheet in the <code>&lt;head></code> of the HTML document.
         </p>
-        <pre class="prettyprint">
+        <pre class="prettyprint lang-html">
 &lt;link rel="stylesheet" href="style.css"></pre>
 
+        <p>
+          [<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>,
+          <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>]
+        </p>
+      </div>
+
+      <div class ="concept">
+        <h3>Boxes</h3>
+        <p>
+          Everything on a webpage is a box. Breaking up sections of the page with <code>div</code> tags allows us to neatly <strong>boxify</strong> the page.
+        </p>
+        <p>
+          All boxes are made up of 4 components: the <code>margin</code>, <code>border</code>, <code>padding</code>, and <code>content</code>.
+        </p>
+        <p>
+          To make handling boxes simpler:
+          <ol>
+            <li>
+              Set sizes using percentages instead of pixels
+            </li>
+            <li>
+              Set the width of a box to include the <code>content</code>, <code>padding</code>, and <code>border</code>.
+              <pre class="prettyprint lang-css">
+* {
+  box-sizing: border-box;
+}</pre>
+            </li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="concept">
+        <h3>Layout</h3>
+        <p>
+          CSS has powerful tools to layout content. You can use <strong>flexbox</strong> by adding the style <code>display: flex</code> to the container.
+        </p>
+        <div class="diagram">
+          <img src="https://css-tricks.com/wp-content/uploads/2011/08/flexbox.png" alt="Flex container diagram">
           <p>
-            [<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Documentation</a>,
-            <a href="https://css-tricks.com/how-css-selectors-work/">Good Resource</a>]
+            Components of a <code>flex</code> container.
           </p>
         </div>
 
-        <div class="concept">
-          <h3>Layout</h3>
-          <p>
-            CSS has powerful tools to layout content. You can use <strong>flexbox</strong> by adding the style <code>display: flex</code> to the container.
-          </p>
-          <div class="diagram">
-            <img src="https://css-tricks.com/wp-content/uploads/2011/08/flexbox.png" alt="Flex container diagram">
-            <p>
-              Components of a <code>flex</code> container.
-            </p>
-          </div>
-
-          <p>
-            [<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a>]
-          </p>
-        </div>
+        <p>
+          [<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a>]
+        </p>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <p>
-        Credit for a bunch of stuff goes to <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">Andy's notes.</a>
-      </p>
-    </div>
-  </body>
-  </html>
+  <div class="footer">
+    <p>
+      Credit for a bunch of stuff goes to <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675461/lessons/3851658626239847/concepts/38473885480923">Andy's notes.</a>
+    </p>
+  </div>
+</body>
+</html>

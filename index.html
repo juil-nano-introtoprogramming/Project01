@@ -393,13 +393,13 @@ else:
         </p>
         <pre class="prettyprint lang-python">
 while TestExpression:
-    Code
+    Block
     if BreakTest:
       break
     Code
 
-for i in []:
-    Code
+for name in list: #iterates over list; range(r)
+    Block
         </pre>
       </div>
 
@@ -438,6 +438,29 @@ q = p
 q[0] = 0
 p == q
 #>>> True</pre>
+        <p>
+          <b>List Operations:</b>
+        </p>
+        <ul>
+          <li>
+            <code>list.append(expression)</code> adds element to end of list.
+          </li>
+          <li>
+            <code>list + list</code> returns concatenated list as new object.
+          </li>
+          <li>
+            <code>len(list)</code> returns number of child elements.
+          </li>
+          <li>
+            <code>list.index(value)</code> returns index of first instance. Returns <code>error</code> if list doesn't contain value.
+          </li>
+          <li>
+            <code>value in list</code> returns <code>True</code> if list contains value. Returns <code>False</code> otherwise.
+          </li>
+          <li>
+            <code>value not in list</code>
+          </li>
+        </ul>
       </div>
     </div>
 

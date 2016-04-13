@@ -331,6 +331,19 @@ name = expression</pre>
           <li>
             Replace: 'string'.replace('old', 'new')
           </li>
+          <li>
+            Split: 'string'.split() = ['string', 'string',...]
+          </li>
+          <li>
+            Convert: str(Expression) = 'string'
+          </li>
+          <li>
+            Looping:
+            <pre>
+for c in 'string':
+    Code
+            </pre>
+          </li>
         </ul>
       </div>
       <p>
@@ -353,7 +366,7 @@ def function(input, argument, parameter):
         </p>
       </div>
       <div class="concept">
-        <h3>Control Flow and Loops</h3>
+        <h3>Control Flow</h3>
         <p>
           We use <code>if</code> statements to control the flow of the program.
         </p>
@@ -369,8 +382,39 @@ else:
           <strong>Boolean operators</strong> take two expressions and return <code>True</code> or <code>False</code>.
         </p>
         <pre>
-< > <= == != or and
+< > <= == != or and</pre>
+      </div>
+
+      <div class="concept">
+        <h3>Loops</h3>
+        <p>
+          <strong>Loops</strong> repeat some code until some expression is <code>False</code>.
+        </p>
+        <pre class="prettyprint lang-python">
+while TestExpression:
+    Code
+    if BreakTest:
+      break
+    Code
+
+for i in []:
+    Code
         </pre>
+      </div>
+    </div>
+
+    <div id="lesson6" class="lesson">
+      <h2>Debugging</h2>
+      <div class="concept">
+        <h3>Strategies</h3>
+        <ul>
+          <li>
+            Examine error messages. Often, starting from the bottom makes it easier to understand.
+          </li>
+          <li>
+            Comment out sections until it isn't broken and work backwards from there.
+          </li>
+        </ul>
       </div>
     </div>
 

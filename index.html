@@ -401,20 +401,62 @@ for i in []:
     Code
         </pre>
       </div>
+
+      <div class="concept">
+        <h3>Random</h3>
+        <p>
+          We can generate random number by importing
+        </p>
+        <pre class="prettyprint">
+from random import randint
+randint(start, end)</pre>
+      </div>
     </div>
 
-    <div id="lesson6" class="lesson">
-      <h2>Debugging</h2>
+    <div id="lesson-bestpractices" class="lesson">
+      <h2>Best Practices</h2>
       <div class="concept">
-        <h3>Strategies</h3>
+        <h3>Commenting</h3>
+        <ul>
+          <li>
+            Start functions with a comment describing expected inputs and outputs.
+          </li>
+          <li>
+            Python (but not all languages) allows you to use a <strong>docstring</strong>.
+            <pre class="prettyprint">
+def somefunction(name):
+    '''somefunction takes an input name
+    Returns a value output
+    Describes what somefunction does'''</pre>
+          </li>
+          <li>
+            Keep comments up-to-date.
+          </li>
+          <li>
+            Be concise.
+          </li>
+        </ul>
+      </div>
+      <div class="concept">
+        <h3>Debugging</h3>
         <ul>
           <li>
             Examine error messages. Often, starting from the bottom makes it easier to understand.
           </li>
           <li>
-            Comment out sections until it isn't broken and work backwards from there.
+            Make sure examples and inherited code work properly.
+          </li>
+          <li>
+            Check (print) intermediate results.
+          </li>
+          <li>
+            Keep and compare old versions. You can do this by commenting out code (<code>cmd + /</code> in Atom) or using a version control system like <a href="https://git-scm.com/">git</a>.
           </li>
         </ul>
+        <p>
+          <a href="https://www.udacity.com/course/cs259">
+          Software Debugging Course</a>
+        </p>
       </div>
     </div>
 

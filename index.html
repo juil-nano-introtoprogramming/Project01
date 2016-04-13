@@ -14,10 +14,14 @@
 <body>
   <img id="logo" src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
   <div class="nav">
+    <!-- #TODO:0 Split notes between separate HTML documents -->
     <a href="#lesson1">Lesson 1</a>
     <a href="#lesson2">Lesson 2</a>
     <a href="#lesson3">Lesson 3</a>
     <a href="#lesson4">Lesson 4</a>
+    <a href="#lesson5">Lesson 5</a>
+    <a href="#lesson6">Lesson 6</a>
+    <a href="#lesson-bestpractices">Best Practices</a>
   </div>
 
   <div class="header">
@@ -308,19 +312,16 @@ name = expression</pre>
 
       <div class="concept">
         <h3>Strings</h3>
-        Properties:
-        <ul>
-          <li>
-            Use <code>''</code>, <code>""</code>, or <code>''' '''</code>
-          </li>
-        </ul>
-        Methods:
+        <p>
+          You can use <code>''</code>, <code>""</code>, or <code>''' '''</code> to define a <strong>string.</strong>
+        </p>
+        <span id="string-methods"><b>Methods</b></span>
         <ul>
           <li>
             Concatenation: 'string' + 'string'
           </li>
           <li>
-            Indexing: 'string'[expression]
+            Indexing: 'string'[position]
           </li>
           <li>
             Select substring: 'string'[start:end]
@@ -410,6 +411,33 @@ for i in []:
         <pre class="prettyprint">
 from random import randint
 randint(start, end)</pre>
+      </div>
+    </div>
+
+    <div id="lesson6" class="lesson">
+      <h2>Lesson 6: Data Structures</h2>
+      <p>
+        <a href="https://www.udacity.com/wiki/cs101/unit_3">
+        Notes for Unit 3</a>
+      </p>
+      <div class="concept">
+        <h3>Lists</h3>
+        <p>
+          <strong>Lists</strong> can be a sequence of anything, even other lists. Strings are just a list of <strong>characters</strong>. <a href="#string-methods">String methods</a> apply to lists as well.
+        </p>
+        <pre class="prettyprint">
+list = [['Hello'], 30419, ...]
+print list[0][0]
+#>>> 'Hello'</pre>
+        <p>
+          Lists are also <strong>mutable</strong>, meaning individual components can be changed without the reference changing (which is what happens to strings; a new object is created every time a change is made). <strong>Aliasing</strong> occurs when there are multiple references to the same object.
+        </p>
+        <pre class="prettyprint">
+p = [1, 2, 4, 8]
+q = p
+q[0] = 0
+p == q
+#>>> True</pre>
       </div>
     </div>
 

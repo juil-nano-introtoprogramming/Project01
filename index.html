@@ -22,7 +22,8 @@
     <a href="#lesson4">Lesson 4</a>
     <a href="#lesson5">Lesson 5</a>
     <a href="#lesson6">Lesson 6</a>
-    <a href="#lesson-bestpractices">Best Practices</a>
+    <a href="#lesson7">Lesson 7</a>
+    <a href="#lesson8">Lesson 8</a>
   </div>
 
   <div class="header">
@@ -403,7 +404,10 @@ for name in list: #iterates over list; range(r)
     Block
         </pre>
       </div>
+    </div>
 
+    <div id="lesson6" class="lesson">
+      <h2>Lesson 6: More Python</h2>
       <div class="concept">
         <h3>Random</h3>
         <p>
@@ -413,10 +417,27 @@ for name in list: #iterates over list; range(r)
 from random import randint
 randint(start, end)</pre>
       </div>
+
+      <div class="concept">
+        <h3>User Input</h3>
+        <pre class="prettyprint">
+x = raw_input('Username:') #python2
+x = input('Password:') #python3</pre>
+      </div>
+
+      <div class="concept">
+        <h3>main()</h3>
+        <pre>
+if __name__ == '__main__':
+    print "This only executes when %s is executed rather than imported" % __file__</pre>
+        <p>
+          Use this at the bottom of your program to execute as a script and run tests.
+        </p>
+      </div>
     </div>
 
-    <div id="lesson6" class="lesson">
-      <h2>Lesson 6: Data Structures</h2>
+    <div id="lesson7" class="lesson">
+      <h2>Lesson 7: Data Structures</h2>
       <p>
         <a href="https://www.udacity.com/wiki/cs101/unit_3">
         Notes for Unit 3</a>
@@ -500,8 +521,8 @@ thing = dict.get('index1', "Not found")</pre>
       </div>
     </div>
 
-    <div id="lesson-bestpractices" class="lesson">
-      <h2>Best Practices</h2>
+    <div id="lesson8" class="lesson">
+      <h2>Lesson 8: Best Practices</h2>
       <div class="concept">
         <h3>Commenting</h3>
         <ul>
@@ -562,6 +583,13 @@ def somefunction(name):
             Alan Turing - Proved that a simple machine, <em>Turing Machine</em>, could simulate any other machine, using arithmetic, comparisons, procedures, and if statements.
           </li>
         </ul>
+      </div>
+    </div>
+
+    <div id="lesson9" class="lesson">
+      <h2>Lesson 9: How to Solve Problems</h2>
+      <div class="concept">
+
       </div>
     </div>
   <!-- Main div -->

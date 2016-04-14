@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- Created 2016-04-4 -->
+<!-- #TODO: Create a github page for nanodegree -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -461,6 +462,41 @@ p == q
             <code>value not in list</code>
           </li>
         </ul>
+      </div>
+
+      <div class="concept">
+        <h3>Dictionary</h3>
+        <p>
+          A <strong>dictionary</strong> is an unordered list that contains unique keys and their related values. This makes it easy to search for a specific key value rather than going through index positions.
+        </p>
+        <!-- #TODO: Maybe use this code format to show methods -->
+        <pre class="prettyprint">
+dict = {'index1': 1, 'index2': 10}
+dict['awesome'] = True
+del dict['index1']
+dict
+#>>> {'index2': 10, 'awesome': True}
+
+# print every key/value pair
+for key, val in dict.items():
+    print "%s key is associated with %s" % (key, val)
+
+# format using dictionary keys
+print """
+index2: {index2}
+awesome: {awesome}
+""".format(**dict)
+
+# safely get value that might not be there
+# Default value = None
+thing = dict.get('index1')
+# get value with a default value
+thing = dict.get('index1', "Not found")</pre>
+        <p>
+          <a href="https://plus.google.com/u/0/events/cciortcifbg5qttjrmg533f78c4?authkey=CMj07bft-ovZPg">Tic-Tac-To using dictionaries</a>,
+          <a href="http://learnpythonthehardway.org/book/ex39.html">
+          Dictionary Reference</a>
+        </p>
       </div>
     </div>
 

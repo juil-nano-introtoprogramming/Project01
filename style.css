@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-/* FIXME:0 figure out how to target id w/ padding*/
+/* DONE:0 figure out how to target id w/ padding*/
 span:target {padding-top: 50px;}
 
 .header, .main, .nav, .aside, .footer {

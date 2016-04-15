@@ -567,12 +567,16 @@ def somefunction(name):
         </p>
       </div>
 
-      <div class="concept">
+      <div id="testing" class="concept">
         <h3>Testing</h3>
         <p>
           Use <strong>unit testing</strong> to make sure all your functions work on their own.
         </p>
         <pre class="prettyprint">
+# Test each function
+assert function1(args) == answer
+assert function2(args) == answer
+
 for (args, answer) in test_cases:
     try:
         result = function(*args)
@@ -628,14 +632,23 @@ python -c "import program; program.test()"</pre>
               </li>
             </ul>
           </li>
+          <li>
+            Develop incrementally and <a href="#testing">test</a> as we go.
+          </li>
         </ol>
       </div>
 
       <div class="concept">
-        <h3>Programming</h3>
+        <h3>Programming Tips</h3>
         <ul>
           <li>
             Build <strong>pseudocode</strong>.
+          </li>
+          <li>
+            Use <strong>stubs</strong> to build helper functions.
+          </li>
+          <li>
+            Account for edge cases.
           </li>
         </ul>
       </div>

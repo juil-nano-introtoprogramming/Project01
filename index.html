@@ -16,6 +16,7 @@
   <img id="logo" src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
   <div class="nav">
     <!-- #TODO:0 Split notes between separate HTML documents -->
+    <!-- #TODO: Make link active when manually scrolling -->
     <a href="#lesson1">Lesson 1</a>
     <a href="#lesson2">Lesson 2</a>
     <a href="#lesson3">Lesson 3</a>
@@ -432,6 +433,13 @@ if __name__ == '__main__':
     print "This only executes when %s is executed rather than imported" % __file__</pre>
         <p>
           Use this at the bottom of your program to execute as a script and run tests.
+        </p>
+      </div>
+
+      <div class="concept">
+        <h3>Assignment</h3>
+        <p>
+          When call a function with a parameter, a reference to the object is being passed in. For mutable types, modifying the object with <code>.append()</code> will modify the object outside the function, but using an assignment statement <code>=</code> will not. The exception to this is <code>+=</code>, it will also modify the referenced object.
         </p>
       </div>
     </div>

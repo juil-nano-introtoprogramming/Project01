@@ -566,6 +566,27 @@ def somefunction(name):
           Software Debugging Course</a>
         </p>
       </div>
+
+      <div class="concept">
+        <h3>Testing</h3>
+        <p>
+          Use <strong>unit testing</strong> to make sure all your functions work on their own.
+        </p>
+        <pre class="prettyprint">
+for (args, answer) in test_cases:
+    try:
+        result = function(*args)
+        if result != answer:
+        else:
+    except AssertionError:
+        if answer = "AssertionError":
+        else:</pre>
+        <p>
+          Use the following to test <code>program.py</code> from the command line.
+        </p>
+        <pre class="prettyprint">
+python -c "import program; program.test()"</pre>
+      </div>
     </div>
 
     <div id="lesson9" class="lesson">
@@ -589,11 +610,34 @@ def somefunction(name):
             <li>
               How are the inputs represented?
             </li>
+            <li>
+              What are the edge cases?
+            </li>
           </ul>
           <li>
             What are the outputs?
           </li>
+          <li>
+            Understand the relationship. Work through examples by hand.
+          </li>
+          <li>
+            <strong>Simple mechanical solution</strong>.
+            <ul>
+              <li>
+                Don't optimize prematurely. Simple and correct is more important.
+              </li>
+            </ul>
+          </li>
         </ol>
+      </div>
+
+      <div class="concept">
+        <h3>Programming</h3>
+        <ul>
+          <li>
+            Build <strong>pseudocode</strong>.
+          </li>
+        </ul>
       </div>
     </div>
 

@@ -28,7 +28,6 @@ span:target {padding-top: 50px;}
 }
 
 .nav {
-  background-color: #294860;
   width: 100%;
   position: fixed;;
 
@@ -38,12 +37,12 @@ span:target {padding-top: 50px;}
 }
 
 .nav > a {
-  padding: 10px 0;
+  padding: 6px 0;
   text-align: center;
-  color: rgba(255, 255, 255, .8);
-  font-size: 1.2em;
+  color: #294860;
+  font-size: .8em;
   text-decoration: none;
-  width: 120px;
+  width: 80px;
 }
 
 .nav > a:hover {background-color: rgba(104, 188, 212, 0.5);}
@@ -53,7 +52,6 @@ span:target {padding-top: 50px;}
   margin: 0 20px;
   padding: 10px;
   margin-top: 80px;
-  background-color: #DEEFFF;
 }
 
 #title {
@@ -62,6 +60,7 @@ span:target {padding-top: 50px;}
 
 #subtitle {
   color: #abd;
+  font-size: 1.2em;
 }
 
 body {

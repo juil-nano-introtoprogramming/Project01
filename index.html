@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <!-- #TODO: Use HTML section tags http://blog.teamtreehouse.com/use-html5-sectioning-elements -->
   <img id="logo" src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
   <div class="nav">
     <!-- #TODO:0 Split notes between separate HTML documents -->
@@ -536,15 +537,7 @@ thing = dict.get('index1', "Not found")</pre>
         <h3>Commenting</h3>
         <ul>
           <li>
-            Start functions with a comment describing expected inputs and outputs.
-          </li>
-          <li>
-            Python (but not all languages) allows you to use a <strong>docstring</strong>.
-            <pre class="prettyprint">
-def somefunction(name):
-    '''somefunction takes an input name
-    Returns a value output
-    Describes what somefunction does'''</pre>
+            Don't over comment. Use descriptive variable/function names.
           </li>
           <li>
             Keep comments up-to-date.
@@ -553,6 +546,31 @@ def somefunction(name):
             Be concise.
           </li>
         </ul>
+      </div>
+      <div class="concept">
+        <h3>Documentation</h3>
+        <p>Python (but not all languages) allows you to use a <strong>docstring</strong> at the beginning of classes, functions, etc.</p>
+        <pre class="prettyprint">
+"""The docstring of a script shoudl be its 'usage' massage.
+
+Describe the scripts's function, command line syntax, environment variables, and files.
+
+These docstrings can be very elaborate and span several pages. It should allow a new user to understand how to use it.
+
+Separate a class's methods by a single blank line."""
+
+def somefunction(name):
+"""Do something and return x.
+
+The summary line needs to fit on one line, end with a period, and have a newline after it."""</pre>
+        <a href="https://docs.python.org/devguide/documenting.html">
+        Documenting Python</a>,
+        <a href="http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html">
+        Docstring Example</a>
+        <a href="https://www.python.org/dev/peps/pep-0257/">
+        Docstring Documentation</a>,
+        <a href="http://docutils.sourceforge.net/rst.html">
+        reStructuredText Docs</a>
       </div>
       <div class="concept">
         <h3>Debugging</h3>

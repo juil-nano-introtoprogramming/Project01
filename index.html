@@ -15,7 +15,7 @@
 <body>
   <!-- #TODO: Use HTML section tags http://blog.teamtreehouse.com/use-html5-sectioning-elements -->
   <img id="logo" src="https://d3u3u7bjn61hwm.cloudfront.net//images/asset-logo-mark-e78b9.svg" alt="Udacity Logo">
-  <div class="nav">
+  <nav>
     <!-- #TODO:0 Split notes between separate HTML documents -->
     <!-- #TODO: Make link active when manually scrolling -->
     <a href="#lesson1">Lesson 1</a>
@@ -28,15 +28,15 @@
     <a href="#lesson8">Lesson 8</a>
     <a href="#lesson9">Lesson 9</a>
     <a href="stage3.html">Stage 3</a>
-  </div>
+  </nav>
 
-  <div class="header">
-    <h1 id='title'>Intro to Programming Nanodegree</h1>
-    <div id="subtitle">Juil's Notes<br>
-      <em>Ongoing</em></div>
-  </div>
+  <main>
+    <header>
+      <h1 id='title'>Intro to Programming Nanodegree</h1>
+      <div id="subtitle">Juil's Notes<br>
+        <em>Ongoing</em></div>
+    </header>
 
-  <div class="main">
     <div id="lesson1" class="lesson">
       <h2><strong>Lesson 1</strong>: The Basics</h2>
       <div class="concept">
@@ -555,16 +555,19 @@ thing = dict.get('index1', "Not found")</pre>
         <pre class="prettyprint">
 """The docstring of a script shoudl be its 'usage' massage.
 
-Describe the scripts's function, command line syntax, environment variables, and files.
+Describe the scripts's function, command line syntax, environment variables,
+and files.
 
-These docstrings can be very elaborate and span several pages. It should allow a new user to understand how to use it.
+These docstrings can be very elaborate and span several pages. It should
+allow a new user to understand how to use it.
 
 Separate a class's methods by a single blank line."""
 
 def somefunction(name):
 """Do something and return x.
 
-The summary line needs to fit on one line, end with a period, and have a newline after it."""</pre>
+The summary line needs to fit on one line, end with a period, and have a
+newline after it."""</pre>
         <a href="https://docs.python.org/devguide/documenting.html">
         Documenting Python</a>,
         <a href="http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html">
@@ -700,9 +703,7 @@ python -c "import program; program.test()"</pre>
         </ul>
       </div>
     </div>
-
-  <!-- Main div -->
-  </div>
+  </main>
 
   <div class="footer">
     <p>

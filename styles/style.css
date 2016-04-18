@@ -18,7 +18,7 @@
 /* DONE:0 figure out how to target id w/ padding*/
 span:target {padding-top: 50px;}
 
-.header, .main, .nav, .aside, .footer {
+header, main, nav, aside, footer {
   flex: 1 100%;
 }
 
@@ -27,7 +27,7 @@ span:target {padding-top: 50px;}
   z-index: 2;
 }
 
-.nav {
+nav {
   width: 100%;
   position: fixed;;
 
@@ -36,7 +36,7 @@ span:target {padding-top: 50px;}
   justify-content: center;
 }
 
-.nav > a {
+nav > a {
   padding: 6px 0;
   text-align: center;
   color: #294860;
@@ -45,20 +45,18 @@ span:target {padding-top: 50px;}
   width: 80px;
 }
 
-.nav > a:hover {background-color: rgba(104, 188, 212, 0.5);}
+nav > a:hover {background-color: rgba(104, 188, 212, 0.5);}
 
-.header {
+h1 {
   text-align: center;
   margin: 0 20px;
   padding: 10px;
   margin-top: 80px;
-}
-
-#title {
   color: #02b3e4;
 }
 
 #subtitle {
+  text-align: center;
   color: #abd;
   font-size: 1.2em;
 }

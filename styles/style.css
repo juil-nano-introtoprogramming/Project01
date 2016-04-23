@@ -90,8 +90,9 @@ code {
   border-radius: 2px;
 }
 
-pre {
+pre code {
   /*Fix prittify border*/
+  margin: auto 20px;
 }
 
 .lesson {

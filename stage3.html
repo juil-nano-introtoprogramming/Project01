@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/highlight.js/9.3.0/styles/default.min.css">
-    <!-- <link rel="stylesheet" href="styles/hljs-tomorrow.css"> -->
+    <link rel="stylesheet" href="styles/hljs-tomorrow.css">
     <script src="http://cdn.jsdelivr.net/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
@@ -29,7 +29,12 @@
         <h2>Lesson 2: Classes</h2>
         <article class="concept">
           <h3>Classes</h3>
-          <p></p>
+          <p>Collection of functions and properties that we can instantiate as an <strong>object</strong>. <code>brad = turtle.Turtle()</code> is calling the <code>def __init__()</code> function. This sets aside memory that wasn't taken previously. Other functions of the class can be called on the <strong>instance</strong>.</p>
+          <p>Classes like <code>random</code>, <code>os</code>, and <code>turtle</code> are a part of the <strong>Python standard library</strong>. External libraries can be imported by calling:</p>
+          <pre><code>sudo easy_install pip
+sudo pip install twilio</code></pre>
+          <pre><code>import twilio
+print twilio.__version__</code></pre>
         </article>
       </article>
     </main>

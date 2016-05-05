@@ -26,7 +26,7 @@
         </article>
       </article>
       <article class="lesson">
-        <h2>Lesson 2: Classes</h2>
+        <h2>Lesson 2: Classes &amp; Modules</h2>
         <article class="concept">
           <h3>Classes</h3>
           <p>Collection of functions and properties that we can instantiate as an <strong>object</strong>. <code>brad = turtle.Turtle()</code> is calling the <code>def __init__()</code> function. This sets aside memory that wasn't taken previously. Other functions of the class can be called on the <strong>instance</strong>.</p>
@@ -37,9 +37,14 @@ sudo pip install twilio</code></pre>
 print twilio.__version__</code></pre>
         </article>
         <article class="concept">
-          <h3>Importing Classes</h3>
-          <p></p>
-          <pre><code>from twilio.rest import TwilioRestClient</code></pre>
+          <h3>Importing Modules</h3>
+          <p>Any Python source file can be used as a module by executng an <strong><code>import</code></strong> statement in some other Python source file.</p>
+          <pre><code>import module1[, module2[,... moduleN]</code></pre>
+          <p>Import specific attributes from a module into the current namespace using <strong><code>from...import</code></strong></p>
+          <pre><code>from modname import name1[, name2[, ... nameN]]</code></pre>
+          <footer>
+            [<cite><a href="http://www.tutorialspoint.com/python/python_modules.htm">tutorialspoint</a></cite>]
+          </footer>
         </article>
       </article>
     </main>

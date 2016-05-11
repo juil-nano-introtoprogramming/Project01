@@ -56,7 +56,13 @@ print twilio.__version__</code></pre>
           <h3>Misc Vocabulary</h3>
           <ul>
             <li>
-              <strong>Instance Variable</strong> - Class property set when an object is created, and accessible by calling <code>instance.property</code>
+              <strong>Constructor</strong> - The initializing function that is caled when an instance is created. In python it is the `__init__` function.
+            </li>
+            <li>
+              <strong>Instance Variable</strong> - Class property set when an object is created, and accessible by calling <code>instance.property</code> It is defined by `self.property` in the `__init__` function.
+            </li>
+            <li>
+              <strong>Instance Method</strong> - Functions that can be called by instances and have `self` as a property. Otherwise, they are just local.
             </li>
           </ul>
         </article>
@@ -75,8 +81,57 @@ print twilio.__version__</code></pre>
         self.var1 = var1</code></pre>
         </article>
         <article class="concept">
-          <h3>Constructor</h3>
-          <p> </p>
+          <h3>Class Variables</h3>
+          <p><strong>Class variables</strong> have values that can be accessed by every instance of that class.</p>
+          <p>Constants should be defined with all-caps.</p>
+          <pre><code>CLASS_VARIABLE = [1, 2, 3]</code></pre>
+        </article>
+        <article class="concept">
+          <h3>Predefined Class Attributes</h3>
+          <ul>
+            <li>
+              <strong>__doc__</strong> - The class documentation string.
+            </li>
+            <li>
+              <strong>__name__</strong> - The name of the class.
+            </li>
+            <li>
+              <strong>__module__</strong> - The name of the module in which this class was defined.
+            </li>
+          </ul>
+          <footer>
+            [<a href="http://www2.lib.uchicago.edu/keith/courses/python/class/5/">UChicago</a>]
+          </footer>
+        </article>
+      </article>
+
+      <article class="lesson">
+        <h2>Lesson 4: Advanced Class Concepts</h2>
+        <article class="concept">
+          <h3>Inheritance</h3>
+          <p>A <em>Child</em> class can <strong>inherit</strong> variables and methods from a <em>Parent</em> class.</p>
+          <pre><code>class Parent(object):
+  def __init__(self, argP1, argP2):
+    self.argP1 = argP1
+    self.argP2 = argP2
+
+class Child(Parent):
+  def __init__(self, argP1, argP2, argC1):
+    Parent.__init__(self, argP1, argP2)
+    self.argC1 = argC1
+
+class SuperChild(Parent):
+  def __init__(self, argP1, argP2, argC1):
+    super(SuperChild, self).__init__(argP1, argP2)
+    self.argC1 = argC1</code></pre>
+          <p>Using <code>super().__init__()</code> is a more reliable and forward compatible way of inheriting.</p>
+          <footer>
+            [<a href="http://learnpythonthehardway.org/book/ex42.html">Learn Python the Hard Way</a>]
+          </footer>
+        </article>
+        <article>
+          <h3>Inheritting Methods</h3>
+          <p>Any instance methods in the parent class are available to child classes. The child class can also override an inheritted method by defining a new method with the same name. This is called <strong>method overriding</strong>.</p>
         </article>
       </article>
     </main>

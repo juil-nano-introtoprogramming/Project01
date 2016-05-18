@@ -133,6 +133,18 @@ class SuperChild(Parent):
           <h3>Inheritting Methods</h3>
           <p>Any instance methods in the parent class are available to child classes. The child class can also override an inheritted method by defining a new method with the same name. This is called <strong>method overriding</strong>.</p>
         </article>
+        <article>
+          <h3>Class and Static Method</h3>
+          <p>A <strong>class method</strong> allows you to call a class within the function. The class should have <code>@classmethod</code>before it, and the first argument in a class method must be a call to the class itself.</p>
+          <p>A <strong>static method</strong> allows you to package related functions that don't need to be called on a class or instance. The class should have <code>@staticmethod</code> before it, and the arguments can be empty.</p>
+          <pre><code>@classmethod
+def get_instances(cls):
+    yield cls.__refs__
+
+@staticmethod
+def get_allowable():
+    return allowable</code></pre>
+        </article>
       </article>
     </main>
   </body>
